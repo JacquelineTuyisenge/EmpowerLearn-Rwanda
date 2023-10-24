@@ -1,0 +1,379 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  *{
+        width: 100%;
+        box-sizing: border-box;
+        font-family:"poppins", sans-serif;
+        color: white;
+    }
+
+    body {
+        background-image: url(images/sec-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-position-y: 67%;
+    }
+    .nav{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header{
+        width: 25%;
+    }
+    header #el{
+        font-size: 25px;
+        color: rgb(173, 173, 11);
+        font-weight: bolder;
+        float: left;
+        height: 10vh;
+        width: auto;
+        margin: 30px;
+        margin-bottom: 40px;
+    }
+    nav {
+        width: 75%;
+        float: right;
+        height: 10vh;
+        width: 70vh;
+        display: flex;
+        min-width: 600px;
+        align-items:center;
+        justify-content:space-around;
+        margin:auto;
+        margin-bottom: 40px;
+    }
+    a{
+        float: right;
+        position:relative;
+        text-decoration: none;
+        color: white;
+        font-family:"poppins", sans-serif;
+        font-size: 18px;
+        letter-spacing: o.5px;
+        padding: 0 10px;
+    }
+    a:after {
+        content:"";
+        position: absolute;
+        background-color: rgb(173, 173, 11);
+        height: 3px;
+        width: 0;
+        left:0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    a:hover{
+        color: rgb(67, 67, 1);
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    a:hover:after{
+        width: 100%;
+    }
+    i {
+        display: flex;
+        font-size: 30px;
+        color: rgb(11, 115, 175);
+        padding: 10px;
+    }
+    #intro{
+        text-align:justify;
+    }
+    #hero{
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(182, 193, 161);
+    }
+    .description{
+        border-right: 5px solid yellow;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    #description {
+        background-color: rgb(0, 0, 0, 0.4);
+        right: 0;
+        display: flex;
+        margin-left: 100px;
+        border-radius: 45px;
+        padding: 10px;
+        width: 45%;
+        height:40%
+    }
+    #pillar {
+        color: rgb(187, 193, 164);
+        font-size: 35px;
+        text-align: center;
+        margin: 50px;
+        padding: 15px;
+    }
+    .card{
+        width: 60rem;
+        height: 30rem;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        }
+    .card-img{
+        width:60rem;
+        height: 30rem;
+        align-items: center;
+        position: center;
+        text-align: center;
+        margin: auto;
+    }
+    .col{
+        align-items: center;
+    }
+    .card-img-overlay{
+        text-align:center;
+        padding: 50px;
+    }
+    .card-text{
+        padding: 100px;
+    }
+    .section-2 {
+        background-color: rgba(0, 0, 0, 0.386);
+        background-image: url(images/gal_2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-position-y: 67%;
+        margin: 5px;
+        position: relative;
+        padding-top: 200px;
+        justify-content: space-between;
+        padding: 5px;
+        
+    }
+    #connect {
+        color:brown;
+        display: block;
+        padding: 5px;
+        padding-top: -20px;
+        padding-top: 1px;
+        text-align: center;
+        margin: 10px;
+    }
+    #contact {
+        color:brown;
+        display: block;
+        padding: 5px;
+        padding-top: 1px;
+        text-align: left;
+        margin: 10px;
+    }
+    li{
+        list-style: none;
+        color: rgb(76, 10, 10);
+    }
+    .section-5 {
+        /* background-image: url(images/contact.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-position-y: 67%; */
+        padding: 20px;
+        height: 70%;
+        margin: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about-us {
+        display: flex;
+        margin: 30px;
+        width: 90%;
+        height: 60%;
+        text-align: center;
+    }
+    .about-us h4{
+        color: rgb(61, 36, 120);
+        font-weight: bold;
+    }
+    .about-us p{
+        color: rgb(81, 30, 128);
+        font-weight: bold;
+    }
+    #about {
+        text-align: center;
+        color:rgb(43, 6, 78);
+        font-weight: bolder;
+    }
+    .lead {
+        padding: 30px;
+        font-size: 17px;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;   
+    }
+    .display-4 {
+        font-size: 25px;
+        color: rgb(187, 193, 164);
+        padding: 10px;
+    }
+    .footer{
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+    }
+    .comment{
+        display: inline-block;
+    }
+    
+    form{
+        border: 3px solid rgb(10, 10, 71);
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.6);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        border-left: 4px solid rgb(56, 10, 71);
+        padding-left: 100px;
+    }
+    input {
+        background-color: rgba(0, 0, 0, 0.241);
+        color:rgb(209, 240, 240);
+        border-radius: 10px;
+        border: 1px solid rgb(107, 107, 186);
+        padding: 10px;
+        margin: 10px;
+    }
+    textarea{
+        background-color: rgba(0, 0, 0, 0.241);
+        border: 1px solid rgb(107, 107, 186);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color:rgb(209, 240, 240);
+    }
+    #submit{
+
+        background-color: rgb(56, 10, 71);
+        padding: 10px;
+        color:rgb(209, 240, 240);
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+    #submit:hover{
+        background-color: rgb(148, 133, 26);
+        color:rgb(2, 34, 34);
+        border: 2px solid black;
+    }
+
+    [class*="section-"]{
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        body {
+            background-position-y: 50%;
+        }
+        .section-5{
+            display: flex;
+            width: auto;
+            margin: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .section-1 {
+            width: 100%;
+            margin-top: 30px;
+        }
+    
+        nav {
+            font-size: 14px;
+            justify-content: center;
+        }
+    }    
+    
+    /* Media query for smaller screens */
+    @media only screen and (min-width: 480px) {
+        body {
+            background-position-y: 50%;
+        }
+        .section-1{
+            width: auto;
+            margin: 10px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .section-2{
+            width: auto;
+            margin: 5px;
+        }
+        #connect{
+           padding: 5px;
+        }
+        .section-5{
+            width: auto;
+            margin: 10px;
+        }
+        #wrapper{
+            padding: 9px;
+            margin: 9px;
+        }
+        #pillar{
+            padding: 5px;
+            margin: 5px;
+        }
+        nav {
+            justify-content: center;
+        }
+    
+        .description {
+            margin-top: 20px;
+        }
+    
+        .lead {
+            padding: 5px;
+            font-size: 16px;
+        }
+    }
+    
+    /* Media query for even smaller screens */
+    @media only screen and (min-width: 320px) {
+        body {
+            background-position-y: 20%;
+        }
+        .section-1 {
+            width: 100%;
+            justify-content: center;
+            margin-top: 30px;
+            padding:0;
+        }
+        .section-2 {
+            width: auto;
+            justify-content: center;
+        }
+        .section-5 {
+            width: auto;
+        }
+    
+    
+        .description {
+            margin-top: 10px;
+        }
+    
+        .lead {
+            padding: 10px;
+        }
+    }
+  
