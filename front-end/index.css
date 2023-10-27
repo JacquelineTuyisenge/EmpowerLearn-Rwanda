@@ -1,10 +1,3 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
   *{
         width: 100%;
         box-sizing: border-box;
@@ -19,126 +12,141 @@
         background-attachment: fixed;
         background-position: center center;
         background-position-y: 67%;
+        margin: 5px;
     }
-    .nav{
-        margin-top: 5px;
-        margin-bottom: 20px;
+    .one{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    nav label{
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        color:#819118;
+    }
+    nav label:hover{
+        background-color: rgb(123, 149, 7);
+        color:rgb(40, 19, 19);
+        transition: 0.7s;
+        height: 60px;
+        width: 150px;
+        border-radius: 60%;
+    }
+    nav ul{
+        list-style: none;
         display: flex;
-        justify-content: space-between;
+        padding: 10px;
+        margin: 10px;
+
     }
-    header{
-        width: 25%;
+    nav ul li{
+        margin-right: 10px;
+        padding: 10px;
     }
-    header #el{
-        font-size: 25px;
-        color: rgb(173, 173, 11);
-        font-weight: bolder;
-        float: left;
-        height: 10vh;
-        width: auto;
-        margin: 30px;
-        margin-bottom: 40px;
-    }
-    nav {
-        width: 75%;
-        float: right;
-        height: 10vh;
-        width: 70vh;
-        display: flex;
-        min-width: 600px;
-        align-items:center;
-        justify-content:space-around;
-        margin:auto;
-        margin-bottom: 40px;
-    }
-    a{
-        float: right;
-        position:relative;
+    nav ul li a{
+        color: rgb(208, 237, 208);
         text-decoration: none;
-        color: white;
-        font-family:"poppins", sans-serif;
+        font-weight: bold;
         font-size: 18px;
-        letter-spacing: o.5px;
-        padding: 0 10px;
+        padding: 10px; 
     }
-    a:after {
-        content:"";
-        position: absolute;
-        background-color: rgb(173, 173, 11);
-        height: 3px;
-        width: 0;
-        left:0;
-        bottom: -10px;
+    .active{
+        color: rgb(22, 20, 1);
+        background-color:#819118;
+        border-radius: 25%;
+        transition: 0.5s;
+    }
+    nav ul li a:hover{
+        color: rgb(22, 20, 1);
         transition: 0.3s;
+        background-color:#819118;
+        border-radius: 25%;
     }
-    a:hover{
-        color: rgb(67, 67, 1);
-        font-weight: bolder;
-        font-size: 18px;
-    }
-    a:hover:after{
-        width: 100%;
-    }
+
     i {
         display: flex;
         font-size: 30px;
-        color: rgb(11, 115, 175);
+        color: rgb(110, 136, 170);
         padding: 10px;
     }
-    #intro{
-        text-align:justify;
-    }
-    #hero{
-        font-size: 40px;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(182, 193, 161);
+    .section-0 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat (3, minmax(100px, auto));
+        grid-gap: 10px;
+        padding: 30px;
+        margin-right: 60px;
+        align-items: center;
+        justify-content: center;
     }
     .description{
-        border-right: 5px solid yellow;
-        margin-top: 10px;
-        margin-bottom: 40px;
+        font-weight: bold;
+        padding: 20px;
+        margin: 20px;
+        align-items: center;
+        justify-content: center;
     }
-    #description {
-        background-color: rgb(0, 0, 0, 0.4);
-        right: 0;
-        display: flex;
-        margin-left: 100px;
-        border-radius: 45px;
-        padding: 10px;
-        width: 45%;
-        height:40%
+    .hello{
+        font-size: 25px;
+        color: rgb(239, 242, 219);
     }
-    #pillar {
-        color: rgb(187, 193, 164);
-        font-size: 35px;
-        text-align: center;
-        margin: 50px;
-        padding: 15px;
+    .introduction{
+        background-color: #81911817;
+        border-radius: 20%;
+        border-right: 3px solid #deec0f;
+        padding: 20px;
+        margin-right: 20px;
+        text-align: justify;
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .section-1{
+        display:grid;
+        grid-template-rows: repeat(4, minmax(100px, auto));
+        grid-gap: 10px;
+        padding: 30px;
+        margin: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    #pillar{
+        color: rgb(239, 242, 219);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    .pillar{
+        grid-row: 1;
+    }
+    .carousel{
+        grid-row: 2/4;
+        height: 50vh;
     }
     .card{
-        width: 60rem;
-        height: 30rem;
         align-items: center;
         text-align: justify;
         margin: auto;
-        }
+        height: 50vh;
+    }
     .card-img{
-        width:60rem;
-        height: 30rem;
         align-items: center;
         position: center;
         text-align: center;
         margin: auto;
+        height: 50vh;
     }
     .col{
         align-items: center;
     }
     .card-img-overlay{
         text-align:center;
-        padding: 50px;
+    }
+    .card-title{
+        color: rgb(239, 242, 219);
     }
     .card-text{
-        padding: 100px;
+        font-size: 15px;
+        padding: 10px;
     }
     .section-2 {
         background-color: rgba(0, 0, 0, 0.386);
@@ -277,103 +285,35 @@
         color:rgb(2, 34, 34);
         border: 2px solid black;
     }
-
-    [class*="section-"]{
-        width: 100%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        body {
-            background-position-y: 50%;
+    /* medium devices */
+    @media only screen and (max-width: 569px) {
+        .one{
+            text-align: center;
+            display: block;
         }
-        .section-5{
-            display: flex;
-            width: auto;
-            margin: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .section-1 {
-            width: 100%;
-            margin-top: 30px;
-        }
-    
-        nav {
-            font-size: 14px;
+        nav label{
+            display: block;
+            text-align: center;
+            margin: auto;
             justify-content: center;
         }
-    }    
-    
-    /* Media query for smaller screens */
-    @media only screen and (min-width: 480px) {
-        body {
-            background-position-y: 50%;
+        nav ul{
+            display: block;
+        }
+        .section-0{
+            text-align: center;
+        }
+        .description{
+            grid-column: 1/3;
+            margin: auto;
+        }
+        .introduction{
+            grid-column: 1/3;
+            margin: auto;
+            width: auto;
         }
         .section-1{
-            width: auto;
-            margin: 10px;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        .section-2{
-            width: auto;
-            margin: 5px;
-        }
-        #connect{
-           padding: 5px;
-        }
-        .section-5{
-            width: auto;
-            margin: 10px;
-        }
-        #wrapper{
-            padding: 9px;
-            margin: 9px;
-        }
-        #pillar{
-            padding: 5px;
-            margin: 5px;
-        }
-        nav {
-            justify-content: center;
-        }
-    
-        .description {
-            margin-top: 20px;
-        }
-    
-        .lead {
-            padding: 5px;
-            font-size: 16px;
+            text-align: center;
+            
         }
     }
-    
-    /* Media query for even smaller screens */
-    @media only screen and (min-width: 320px) {
-        body {
-            background-position-y: 20%;
-        }
-        .section-1 {
-            width: 100%;
-            justify-content: center;
-            margin-top: 30px;
-            padding:0;
-        }
-        .section-2 {
-            width: auto;
-            justify-content: center;
-        }
-        .section-5 {
-            width: auto;
-        }
-    
-    
-        .description {
-            margin-top: 10px;
-        }
-    
-        .lead {
-            padding: 10px;
-        }
-    }
-  
