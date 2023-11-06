@@ -1,7 +1,7 @@
   *{
         width: 100%;
         box-sizing: border-box;
-        font-family:"poppins", sans-serif;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: white;
     }
 
@@ -13,6 +13,18 @@
         background-position: center center;
         background-position-y: 67%;
         margin: 5px;
+        animation: moveBackground 10s linear infinite;
+    }
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(50, 16, 2, 0.5);
+        z-index: -1;
+        position: fixed;
     }
     .one{
         display: grid;
@@ -21,18 +33,11 @@
     }
     nav label{
         padding: 10px 20px;
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
         cursor: pointer;
-        color:#819118;
-    }
-    nav label:hover{
-        background-color: rgb(123, 149, 7);
-        color:rgb(40, 19, 19);
-        transition: 0.7s;
-        height: 60px;
-        width: 150px;
-        border-radius: 60%;
+        color: rgb(152, 56, 7);
     }
     nav ul{
         list-style: none;
@@ -46,7 +51,7 @@
         padding: 10px;
     }
     nav ul li a{
-        color: rgb(208, 237, 208);
+        color: rgb(175, 91, 57);
         text-decoration: none;
         font-weight: bold;
         font-size: 18px;
@@ -54,14 +59,14 @@
     }
     .active{
         color: rgb(22, 20, 1);
-        background-color:#819118;
+        background-color:rgb(103, 37, 4);
         border-radius: 25%;
         transition: 0.5s;
     }
     nav ul li a:hover{
         color: rgb(22, 20, 1);
         transition: 0.3s;
-        background-color:#819118;
+        background-color:rgb(103, 37, 4);
         border-radius: 25%;
     }
 
@@ -73,11 +78,11 @@
     }
     .section-0 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat (3, minmax(100px, auto));
-        grid-gap: 10px;
-        padding: 30px;
-        margin-right: 60px;
+        grid-template-columns: 1;
+        grid-template-rows: repeat (2, minmax(100px, auto));
+        grid-gap: 15px;
+        padding: 90px;
+        text-align: justify;
         align-items: center;
         justify-content: center;
     }
@@ -89,18 +94,30 @@
         justify-content: center;
     }
     .hello{
-        font-size: 25px;
+        text-align: center;
+        font-size: 50px;
         color: rgb(239, 242, 219);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .introduction{
-        background-color: #81911817;
         border-radius: 20%;
-        border-right: 3px solid #deec0f;
+        border-right: 5px solid rgb(152, 56, 7);
         padding: 20px;
-        margin-right: 20px;
+        margin-left: 350px;
         text-align: justify;
-        grid-column: 2;
-        grid-row: 3;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 100%;
+    }
+    #introduction{
+        color: rgb(239, 242, 219);
+        opacity: 0.8;
+        text-align: justify;
+        align-items: center;
+    }
+    .em{
+        color: rgb(152, 56, 7);
     }
     .section-1{
         display:grid;
@@ -162,6 +179,16 @@
         justify-content: space-between;
         padding: 5px;
         
+    }
+    .section-2::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.379);
+        opacity: 0.5;
     }
     #connect {
         color:brown;
@@ -232,15 +259,14 @@
         padding: 10px;
     }
     .footer{
-        background-color: #0099cc;
-        color: #ffffff;
+        background-color: rgba(63, 20, 3, 0.563);
+        color: rgb(169, 222, 169);
         text-align: center;
         font-size: 18px;
         padding: 20px;
         right: 0;
         left: 0;
         bottom: 0;
-        position: fixed;
     }
     .comment{
         display: inline-block;
@@ -285,8 +311,8 @@
         color:rgb(2, 34, 34);
         border: 2px solid black;
     }
-    /* medium devices */
-    @media only screen and (max-width: 569px) {
+    /* small devices */
+    @media only screen and (max-width: 578px) {
         .one{
             text-align: center;
             display: block;
@@ -304,11 +330,9 @@
             text-align: center;
         }
         .description{
-            grid-column: 1/3;
             margin: auto;
         }
         .introduction{
-            grid-column: 1/3;
             margin: auto;
             width: auto;
         }
