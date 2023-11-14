@@ -196,7 +196,7 @@
     }
     .our-story, .mission, .goals{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, minmax(100px, auto));
         grid-gap: 4px;
         color: rgb(239, 242, 219);
         border-radius: 10px;
@@ -210,26 +210,16 @@
         font-size: 20px;
     }
     .une{
-        grid-column: 1/4;
         text-align: center;
-    }
-    .une, .words, .picture{
-        padding: 10px;
+        padding-top: 50px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .words{
-        grid-column: 1/3;
-        padding: 3px;
+        padding: 40px;
         margin: 3px;
         text-align: justify;
         font-size: 15px;
-    }
-    .picture{
-        float: right;
-        padding: 3px;
-        margin: 3px;
-        position: fixed;
-        border-radius: 9px;
-        box-shadow: 0 0 7px solid rgb(88, 25, 2);
     }
     .pictur img{
         width: 500px;
