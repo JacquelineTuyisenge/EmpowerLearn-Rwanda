@@ -3,6 +3,7 @@
         box-sizing: border-box;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: rgb(239, 242, 219);
+        text-align: justify;
     }
 
     body {
@@ -34,6 +35,8 @@
     }
     nav{
         background-color: rgb(9, 6, 6);
+        width: 100%;
+        height: auto;
         padding:0;
         margin: 0;
         position: fixed;
@@ -48,6 +51,26 @@
         font-weight: bolder;
         cursor: pointer;
         color: rgb(152, 56, 7);
+    }
+    nav label a{
+        color: rgb(152, 56, 7);
+    }
+    nav label a:hover{
+        color: rgb(152, 56, 7);
+    }
+    .Logo{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .login{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        list-style: none;
     }
     nav ul{
         list-style: none;
@@ -68,18 +91,17 @@
         padding: 10px; 
     }
     .active{
-        color: rgb(22, 20, 1);
-        background-color:rgb(103, 37, 4);
-        border-radius: 25%;
+        color: rgb(156, 55, 4);
         transition: 0.5s;
+        font-weight: bold;
+        border-bottom: 3px solid rgb(152, 56, 7);
     }
     nav ul li a:hover{
-        color: rgb(22, 20, 1);
+        color: rgb(136, 90, 4);
         transition: 0.3s;
-        background-color:rgb(103, 37, 4);
         border-radius: 25%;
     }
-    .section-0 {
+    .section-4 {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: repeat (2, minmax(100px, auto));
@@ -287,7 +309,46 @@
         outline: none;
         border: none;
     }
-
+    .section-3{
+        background-color: rgba(11, 5, 1, 0.945);
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 20;
+        margin-right: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        padding: 20px;
+        margin: 0;
+        margin-left: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-1{
+        margin-left: 20px;
+    }
+    .courses_card{
+        background-color: rgba(9, 5, 0, 0.158);
+        border-radius: 25px;
+        padding: 10px;
+        border:1px solid rgba(93, 40, 2, 0.633);
+        box-shadow: 0 0 10px rgb(68, 20, 1);
+    }
+    .readmore{
+        color: rgb(204, 197, 160);
+        font-size: 16px;
+    }
+    .card-img-top{
+        border-radius: 20px;
+    }
     .copyright{
         color: white;
         text-align: center;
@@ -320,7 +381,10 @@
     }
     i{
         color: rgb(102, 38, 4);
-        font-size: 25px;
+        font-size: 20px;
+    }
+    i:hover{
+        color: rgb(245, 106, 36);
     }
     .links ul li a{
         color: rgb(239, 242, 219);
@@ -335,8 +399,9 @@
           background-position: 100% 0; /* Adjust as needed */
         }
       }
+
     /* small devices */
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
         .hello{
             text-align: center;
         }
@@ -361,7 +426,7 @@
         nav ul{
             display: block;
         }
-        .section-0{
+        .section-4{
             text-align: center;
         }
         .description{
@@ -394,5 +459,92 @@
             display: grid;
             width: 100%;
             text-align: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;
+            width: 100%;
+        }
+        .col-1, .col-3{
+            margin-left: 30px;
+            margin: 10px;
+        }
+        .get_in_touch{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-gap: 30px;
+        }
+    }
+    /* medium devices */
+    @media only screen and (min-width: 801px) and (max-width: 1089px) {
+        .hello{
+            text-align: center;
+        }
+        .introduction{
+            text-align: center;
+            width: 100%;
+        }
+        .one{
+            text-align: center;
+            display: block;
+        }
+        nav{
+            background-color: rgb(9, 6, 6);
+            position: relative;
+        }
+        nav label{
+            display: block;
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+        }
+        nav ul{
+            display: block;
+        }
+        .section-4{
+            text-align: center;
+        }
+        .description{
+            margin: auto;
+        }
+        .introduction{
+            margin: auto;
+            width: auto;
+        }
+        .section-1{
+            text-align: center;
+            
+        }
+        .pictur img{
+            width: 100%;
+            height: 100%;
+        }
+        .about-us{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 10px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: auto;
+        }
+        .our-story, .mission, .goals{
+            width: auto;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px;
+            width: 100%;
+        }
+        .get_in_touch{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            grid-gap: 30px;
         }
     }

@@ -12,81 +12,86 @@
 <body> 
     <header>
         <nav class="one">
-            <label for="logo">EL-Rwanda</label>
+            <div class="Logo">
+                <div><label for="logo"><a href="#home">EL-Rwanda</a></label></div>
+                <div class="Login"><a href="#" class="login"><i class='Login bx bx-log-in'>LOGIN</i></a></div>
+            </div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skills">Skill sets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header> 
     <main>
-        <div class="section-0">
-            <div class="description">
-                <p class="hello">Welcome to <br><span class="em">E</span>mpower<span class="em">L</span>earn-<span class="em">Rwanda</span></p>
+        <div id="home"class="section-0">
+            <div class="section-4">
+                <div class="description">
+                    <p class="hello">Welcome to <br><span class="em">E</span>mpower<span class="em">L</span>earn-<span class="em">Rwanda</span></p>
+                </div>
+                <div class="introduction">
+                    <p id="introduction">A web application designed to empower Rwandan youths, <br>with a focus on girls and young women, by providing a wide range of non-formal educational resources and other opportunities,<br> to support their personal and professional development.</p></p>
+                </div>
             </div>
-            <div class="introduction">
-                <p id="introduction">A web application designed to empower Rwandan youths, <br>with a focus on girls and young women, by providing a wide range of non-formal educational resources and other opportunities,<br> to support their personal and professional development.</p></p>
+            <br><br><br><br><br><br><br><br>
+            <div class="section-1 mt-4 mb-4">
+                <div class="pillar">
+                    <h6 class="display-6 mt-3 mb-2" id="pillar">Pillars of EmpowerLearn-Rwanda</h6>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col">
+                            <div class="card text-white">
+                                <img src="images/edu-empower.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Educational Empowerment</h5>
+                                <p class="card-text">"EmpowerLearnRwanda" strives to provide accessible and engaging non-formal education on various topics, including life skills, gender equality, technical skills like HTML and CSS, and addressing social issues like gender-based violence and substance abuse.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col">
+                            <div class="card text-white">
+                                <img src="images/gender-includ.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                <h5 id="Gender" class="card-title shadow-lg">Gender Inclusivity</h5>
+                                <p id="gender" class="card-text shadow-lg">One of its core objectives is to promote gender inclusivity by empowering young women with knowledge and skills, thus contributing to a more equitable society.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col">
+                            <div class="card text-white">
+                                <img src="images/community impa.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Community and Social Impact</h5>
+                                <p class="card-text">By addressing social issues and promoting education, "EmpowerLearnRwanda" aligns with broader community development goals and contributes to positive social change.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br>
-        <div class="section-1 mt-4 mb-4">
-            <div class="pillar">
-                <h6 class="display-6 mt-3 mb-2" id="pillar">Pillars of EmpowerLearn-Rwanda</h6>
-            </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="col">
-                        <div class="card text-white">
-                            <img src="images/edu-empower.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                              <h5 class="card-title">Educational Empowerment</h5>
-                              <p class="card-text">"EmpowerLearnRwanda" strives to provide accessible and engaging non-formal education on various topics, including life skills, gender equality, technical skills like HTML and CSS, and addressing social issues like gender-based violence and substance abuse.</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col">
-                        <div class="card text-white">
-                            <img src="images/gender-includ.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                              <h5 id="Gender" class="card-title shadow-lg">Gender Inclusivity</h5>
-                              <p id="gender" class="card-text shadow-lg">One of its core objectives is to promote gender inclusivity by empowering young women with knowledge and skills, thus contributing to a more equitable society.</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col">
-                        <div class="card text-white">
-                            <img src="images/community impa.jpg" class="card-img" alt="...">
-                            <div class="card-img-overlay">
-                              <h5 class="card-title">Community and Social Impact</h5>
-                              <p class="card-text">By addressing social issues and promoting education, "EmpowerLearnRwanda" aligns with broader community development goals and contributes to positive social change.</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-        <div class="section-2 m-3 p-3">
+        <div id="about" class="section-2 m-3 p-3">
             <h2 class="about">About Us</h2>
             <div class="about-us shadow-lg">
                 <div class="our-story">
@@ -119,81 +124,112 @@
                     <div class="pictur">
                         <img class="shadow-lg"src="images/team_ja.jpg" alt="team">
                         <br>
-                        <h5 class="nome">Jacqueline Tuyisenge</h5>
-                        <p class=>Full Stack Developer and Founder of EL-Rwanda</p>
+                        <h5 class="nome text-center">Jacqueline Tuyisenge</h5>
+                        <p class="job text-center">Full Stack Developer and Founder of EL-Rwanda</p>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="sect-3">
-            <div class="container-xl my-5">
-                <h2 class="text-warning"id="service">Service Section will go here, mainly it will be backend</h3>
+        <div id="skills" class="section-3">
+            <div class="">
+                <h3 class="text-center fw-bold p-3 m-3">EL-RWANDA Skill Sets</h3>
             </div>
-        </section>
-        <section class="section-5">
-            <div class="comment">
-                <br>
-                <div class="inputs align-items-center justify-content-center">
-                    <form action="" method="POST">
-                        <h3 class="text-center fw-bold p-3">Got Comments on EL-Rwanda?</h3>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Enter your Name</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username">
+            <div class="row">
+                <div class="col-1">
+                    <div class="courses_card" style="width: 20rem;">
+                        <img src="images/break-barriers.jpg" class="card-img-top" alt="breaking-barriers">
+                        <div class="card-body">
+                          <h5 class="card-title">Breaking Barriers</h5>
+                          <p class="card-text">Dive into crucial topics like menstrual health and circle, fostering confidence through programs like 'Free Being Me,' and addressing gender-based violence. Unlock information on support centers, offering a guiding light for those in need.</p>
+                          <a href="#" class="readmore">Read more..</a>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Enter your Email</label>
-                            <input type="email"  class="form-control" id="email" placeholder="Enter your email" name="email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Enter your Comment</label>
-                            <textarea type="comment" class="form-control" rows="4" id="message" placeholder="Write here.." name="comment"></textarea>
-                        </div>
-                        <div class=" button mb-3">
-                            <button type="submit" value="submit" class="btn" id="submit" name="comment">Comment</button>
-                        </div>
-                            
-                    </form>
+                    </div>
                 </div>
-                <br>
+                <div class="col-2">
+                    <div class="courses_card" style="width: 20rem;">
+                        <img src="images/skills.jpg" class="card-img-top" alt="skills-unleashed">
+                        <div class="card-body">
+                          <h5 class="card-title">Skills Unleashed: Beyond Classrooms</h5>
+                          <p class="card-text">Explore a world of essential life skills beyond textbooks—learn to craft reusable pads, create stunning decorations from recyclable plastics, uncover different opportunities, and master essential anti-drug education. Discover the roadmap to self-sufficiency and empowerment!</p>
+                          <a href="#" class="readmore">Read more..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="courses_card" style="width: 20rem;">
+                        <img src="images/tech-skills.jpg" class="card-img-top" alt="tech-skills">
+                        <div class="card-body">
+                          <h5 class="card-title">Explore Tech Skills: Digital Success</h5>
+                          <p class="card-text">Enter the dynamic world of technical expertise with Git & GitHub mastery, HTML, CSS for mesmerizing design, and more. Take the reins of your digital destiny and sculpt your path in the ever-evolving landscape of technology.</p>
+                          <a href="#" class="readmore">Read more..</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+        <div id="contact" class="section-5">
+            <div>
+                <div class="comment">
+                    <h2 class="text-center fw-bolder text-dark p-4">CONTACT US</h2>
+                    <br>
+                    <div class="inputs align-items-center justify-content-center">
+                        <form action="" method="POST">
+                            <h3 class="text-center fw-bold p-3">Got Comments on EL-Rwanda?</h3>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Enter your Name</label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Enter your Email</label>
+                                <input type="email"  class="form-control" id="email" placeholder="Enter your email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Enter your Comment</label>
+                                <textarea type="comment" class="form-control" rows="4" id="message" placeholder="Write here.." name="comment"></textarea>
+                            </div>
+                            <div class=" button mb-3">
+                                <button type="submit" value="submit" class="btn" id="submit" name="comment">Comment</button>
+                            </div>
+                                
+                        </form>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="get_in_touch">
+                    <div class="connect_">
+                        <ul>
+                            <li><i class='bx bxl-facebook-circle'></i>Jacky Sage</li>
+                            <li><i class='bx bxl-twitter'></i>@tuyisenge-jacky</li>
+                            <li><i class='bx bxl-instagram-alt'></i>jacky sage</li>
+                            <li><i class='bx bxl-linkedin'></i>JacquelineTuyisenge</li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <br>
+                            <li><a href="#about">About Us</a></li>
+                            <br>
+                            <li><a href="#skills">Skill Sets</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <ul>
+                            <li><i class='bx bx-map'></i>Kigali/Gasabo</li>
+                            <li><i class='bx bx-phone'></i>+252 788 789 789</li>
+                            <li><i class='bx bx-envelope'></i>7KQ0P@example.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">
+                    <p class="copyright">Copyright &copy; 2023 EmpowerLearn-Rwanda. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-        <div class="get_in_touch">
-            <div class="connect_">
-                <ul>
-                    <li><i class='bx bxl-facebook-circle'></i>Jacky Sage</li>
-                    <li><i class='bx bxl-twitter'></i>@tuyisenge-jacky</li>
-                    <li><i class='bx bxl-instagram-alt'></i>jacky sage</li>
-                    <li><i class='bx bxl-linkedin'></i>JacquelineTuyisenge</li>
-                </ul>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <br>
-                    <li><a href="#">About Us</a></li>
-                    <br>
-                    <li><a href="#">Services</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <ul>
-                    <li><i class='bx bx-map'></i>Kigali/Gasabo</li>
-                    <li><i class='bx bx-phone'></i>+252 788 789 789</li>
-                    <li><i class='bx bx-envelope'></i>7KQ0P@example.com</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="copyright">
-            <p class="copyright">Copyright &copy; 2023 EmpowerLearn-Rwanda. All rights reserved.</p>
-        </div>
-    </footer>
-
-
-
-
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="index.js"></script>
