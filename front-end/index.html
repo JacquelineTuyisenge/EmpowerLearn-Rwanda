@@ -14,7 +14,7 @@
         <nav class="one">
             <div class="Logo">
                 <div><label for="logo"><a href="#home">EL-Rwanda</a></label></div>
-                <div class="Login"><a href="#" class="login"><i class='Login bx bx-log-in'>LOGIN</i></a></div>
+                <div><button class="login">LOGIN</button></div>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -173,22 +173,31 @@
                     <h2 class="text-center fw-bolder text-dark p-4">CONTACT US</h2>
                     <br>
                     <div class="inputs align-items-center justify-content-center">
-                        <form action="" method="POST">
+                        <form action="connect.php" method="POST">
                             <h3 class="text-center fw-bold p-3">Got Comments on EL-Rwanda?</h3>
                             <div class="mb-3">
                                 <label for="username" class="form-label">Enter your Name</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username">
+                                <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Enter your Email</label>
-                                <input type="email"  class="form-control" id="email" placeholder="Enter your email" name="email">
+                                <input type="email"  class="form-control" id="email" placeholder="Enter your email" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Enter your Comment</label>
-                                <textarea type="comment" class="form-control" rows="4" id="message" placeholder="Write here.." name="comment"></textarea>
+                                <textarea type="comment" class="form-control" rows="4" id="message" placeholder="Write here.." name="comment" required></textarea>
                             </div>
+                            <fieldset>
+                                <legend>Type</legend>
+                                    <label>
+                                        Complaint<input type="radio" name="type" value="1">
+                                    </label>
+                                    <label>
+                                        Suggestion<input type="radio" name="type" value="2" checked>
+                                    </label>
+                            </fieldset>
                             <div class=" button mb-3">
-                                <button type="submit" value="submit" class="btn" id="submit" name="comment">Comment</button>
+                                <button type="submit" value="submit" class="btn" id="submit" name="btn">Comment</button>
                             </div>
                                 
                         </form>
@@ -229,6 +238,49 @@
                 </div>
             </div>
         </div>
+        <!-- <div id="loginModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="loginForm">
+                    <h2>Login</h2>
+                    <form id="actualLoginForm" action = "" method = "POST">
+                        <div class="form-group m-3">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" placeholder="Enter Your Username" class="form-control">
+                        </div>
+                        <div class="form-group m-3">
+                            <label for="password">Enter your Password</label>
+                            <input type="password" name="password" placeholder="Enter Your Password" class="form-control">
+                        </div>
+                        <div class="form-group m-3">
+                            <button type="submit" value ="" name ="btn" class="btn">Login</button>
+                        </div>
+                        <p>Don't have an account? <a href="#" id="switchToSignup">Signup</a></p>
+                    </form>
+                </div>
+                <div id="signupForm" style="display: none;">
+                    <h2>Signup</h2>
+                    <form id="actualSignupForm" action = "" method = "POST">
+                        <div class="form-group m-3">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" placeholder="Enter Your Username" class="form-control">
+                        </div>
+                        <div class="form-group m-3">
+                            <label for="email">Enter your Email</label>
+                            <input type="email" name="email" placeholder="Enter Your Email" class="form-control">
+                        </div>
+                        <div class="form-group m-3">
+                            <label for="password">Enter your Password</label>
+                            <input type="password" name="password" placeholder="Enter Your Password" class="form-control">
+                        </div>
+                        <div class="form-group m-3">
+                            <button type="submit" value ="" name ="btn" class="btn">Signup</button>
+                        </div>
+                        <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div> -->
     </main>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

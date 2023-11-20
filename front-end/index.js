@@ -25,42 +25,91 @@
         });
     });
 
-    // var links = document.querySelectorAll(".itemLinks");
-    // var wrapper = document.querySelector("#wrapper");
+//    // JavaScript to handle switching between login and signup forms
+//    document.addEventListener("DOMContentLoaded", function() {
+//     var loginLink = document.querySelector('.Login');
+//     var loginModal = document.getElementById('loginModal');
+//     var switchToSignup = document.getElementById("switchToSignup");
+//     var switchToLogin = document.getElementById("switchToLogin");
+//     var closeBtn = document.querySelector("#loginModal .close");
+//     var loginForm = document.getElementById("loginForm");
+//     var signupForm = document.getElementById("signupForm");
 
-    // var activeLink = 0;
+//     function toggleLoginModal() {
+//         loginModal.classList.toggle('hidden');
+//     }
 
-    // for(var i = 0; i < links.length; i++){
-    //     var link = links[i];
-    //     link.addEventListener('click', setClickedItem, false);
+//     if (loginLink) {
+//         loginLink.addEventListener('click', function(event) {
+//             event.preventDefault();
+//             toggleLoginModal();
+//         });
+//     }
 
-    //     link.itemID = i;
-    // }
+//     if (switchToSignup) {
+//         switchToSignup.addEventListener("click", function(event) {
+//             event.preventDefault();
+//             loginForm.style.display = "none";
+//             signupForm.style.display = "block";
+//         });
+//     }
 
-    // links[activeLink].classList.add("active");
+//     if (switchToLogin) {
+//         switchToLogin.addEventListener("click", function(event) {
+//             event.preventDefault();
+//             signupForm.style.display = "none";
+//             loginForm.style.display = "block";
+//         });
+//     }
 
-    // function setClickedItem(e){
-    //     removeActiveLinks();
+//     if (closeBtn) {
+//         closeBtn.addEventListener("click", function(event) {
+//             event.preventDefault();
+//             loginModal.classList.add('hidden');
+//         });
+//     }
+// });
 
-    //     var clickedLink = e.target;
-    //     activeLink = clickedLink.itemID;
 
-    //     changePosition(clickedLink);
-    // }
 
-    // function removeActiveLinks(){
-    //     for (var i = 0; i <links.length; i++){
-    //         links[i].classList.remove("active");
-    //     }
-    // }
+    
 
-    // function changePosition(link){
-    //     var position = link.getAttribute("data-pos");
+//     // var links = document.querySelectorAll(".itemLinks");
+//     // var wrapper = document.querySelector("#wrapper");
 
-    //     var translateValue = "translate3d(" + position + ", 0px, 0)";
-    //     wrapper.style.transform = translateValue;
+//     // var activeLink = 0;
 
-    //     link.classList.add("active");
-    // }
+//     // for(var i = 0; i < links.length; i++){
+//     //     var link = links[i];
+//     //     link.addEventListener('click', setClickedItem, false);
+
+//     //     link.itemID = i;
+//     // }
+
+//     // links[activeLink].classList.add("active");
+
+//     // function setClickedItem(e){
+//     //     removeActiveLinks();
+
+//     //     var clickedLink = e.target;
+//     //     activeLink = clickedLink.itemID;
+
+//     //     changePosition(clickedLink);
+//     // }
+
+//     // function removeActiveLinks(){
+//     //     for (var i = 0; i <links.length; i++){
+//     //         links[i].classList.remove("active");
+//     //     }
+//     // }
+
+//     // function changePosition(link){
+//     //     var position = link.getAttribute("data-pos");
+
+//     //     var translateValue = "translate3d(" + position + ", 0px, 0)";
+//     //     wrapper.style.transform = translateValue;
+
+//     //     link.classList.add("active");
+//     // }
 
 })();
