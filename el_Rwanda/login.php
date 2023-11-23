@@ -1,3 +1,28 @@
+<?php
+require "config.php";
+    if(isset($_POST["submit"])){
+        $usernameemail = $_POST["usernameemail"];
+        $password = $_POST["password"];
+        $result = mysqli_query($conn, "SELECT * FROM `tb_user` WHERE `user_username` = '$usernameemail' OR `user_email` = '$usernameemail'");
+        $row = mysqli_fetch_assoc($result);
+
+        if(mysqli_num_rows($result) > 0){
+            if (($password == $row["user_pass"]) && ( ($usernameemail == $row["user_username"]) || ($usernameemail == $row["user_email"]))) {
+                $_SESSION["login"] = true;
+                $_SESSION["user_id"] = $row["user_id"];
+                header("location: skill_sets.html");
+            }
+            else{
+                echo "<script> alert('Wrong Username or Password!'); </script>";
+            }
+        }
+        else{
+            echo "<script> alert('User not registered!'); </script>";
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,32 +68,19 @@
         <h3 class=" text-center p-2 m-3">Login to continue to skill sets</h3>
         <form action = "" method = "POST">
             <div class="form-group m-3">
-                <label for="username">UserName</label>
-                    <input type="text" name="username" placeholder="Username" name="username" class="form-control" required>
+                <label for="usernameemail">UserName or Email</label>
+                    <input type="text" name="usernameemail" id= "usernameemail" placeholder="Username" class="form-control" required value="">
             </div>
             <div class="form-group m-3">
-                <label for="password">Enter your Password</label>
-            <input type="password" name="password"  class="form-control" required>
+                <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" required value="">
             </div>
             <div class="form-group m-3">
-                <button type="submit" value ="" name = "btn" class="btn">Login</button>
+                <button type="submit" name ="submit" class="btn">Login</button>
                 <p>don't have account?  <a class=" text-decoration-none text-warning" href="signup.php">Signup</a></p>
             </div>
+        </form>
     </div>
-            <?php
-            // error_reporting(0);
-            //     include "connect.php";
-            //     if(isset($_POST['btn'])){
-            //         $username = $_POST['username'];
-            //         $password = $_POST['password'];
-
-            //         $sql="SELECT `guest_name`,  `guest_pass` FROM `guests` WHERE `guest_name` = '$username'AND `guest_pass` = '$password' ";
-            //         $result = mysqli_query($con,$sql);
-            //     }
-            //     if ($result){
-            //         header('location: display.php');
-            //     }
-            ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
