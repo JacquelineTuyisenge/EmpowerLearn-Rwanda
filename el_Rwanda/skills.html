@@ -18,6 +18,10 @@
             background-color: rgba(38, 18, 1, 0.975);
 
         }
+        img{
+            width: 100%;
+            height: auto;
+        }
         .comment{
         background-image: url("images/comment.jpg");
         background-size: cover;
@@ -148,21 +152,74 @@
             </diV>
         </section>
         <section>
+            <h2>Embracing Life skills</h2>
+            <p>Discover new skills that don't need school or lots of money. You can learn these skills on your own, making your life better. Let's explore:</p>
             <article>
-                <h2>The art of braiding</h2>
-                <p>.............</p>
+            <div>
+                <h3>The art of braiding</h3>
+                <p>Not only is it a convenient hairstyle, but it serves as a protective style that will help your natural hair grow faster. It is in this way that you can embrace this skill because everytime people will have hair, and they will always need it. plus it can be done by both Genders and it really help people in making money and looking good.</p>
+                <figure>
+                    <img src="images/braids.jpg" alt="braids">
+                    <figcaption>A man being Braided in his hair</figcaption>
+                </figure>
+                <strong>few ways to start doing it:</strong>
+                <ul>
+                    
+                    <li>Get started with some hair bands and a comb.</li>
+                    <li>Practice on friends or family to improve.</li>
+                    <li>YouTube has great tutorials for beginners.</li>
+                </ul>
+                <p>here is some youtube tutorials to help you</p>
+                <br>
+                <button id="gusuka" class="btn btn-outline-danger">Watch</button>
                 <!--others-->
+            </div>
+            <hr>
+            <div>
+                <h2>Ihangire Imirimo</h2>
+                <p> Menya ubuhanga bushya budakeneye ishuri cyangwa amafaranga menshi.</p>
+                <h3>Gusuka</h3>
+                <p>Gusuka ni ubumenyi wakwiga kugiti cyawe, ugakoresha amafaranga make cyangwa se ntayo, bihoraho kuko abantu bose abfite imisatsi bahora bashsks gusa neza, kandi byakorwa nabahungu cyangwa abakobwa , bityo bigatuma biteza imbere</p>
+                <strong> uko watangira</strong>
+                <ul>
+                    <li>utangira ucamo imirongo mumutwe, ukoresheje igisokozo, ndetse numusatsi mucye</li>
+                    <li>ushobora kwigira kunshuti cyangwa se abavandimwe</li>
+                    <li>Youtbe ibyerekana neza uko bikurikirana ukaba wabasha kubyikorera nawe</li>
+                </ul>
+                <p>Aha hari video ya youtube yagufasha</p>
+                <br>
+                <button id="gusuka" class="btn btn-outline-danger">Yirebe</button>
+            </div>
             </article>
-            <!--other articles-->
+            <article>
+                <div>
+                    <h3>The art of Sewing</h3>
+                    <p>Being able to sew enables us to make the most out of existing items that need minor repairs for a longer life span. Sewing is a skill which can help us feel more creative. It can be more budget friendly than buying something new, which has a better impact on the environment.</p>
+                    <figure>
+                        <img src="images/kudoda-1.jpg" alt="sewing">
+                        <figcaption>sewing picture</figcaption>
+                    </figure>
+                    <p>Before sewing anything, you must first design by drowing and knowing measures you will follow</p>
+                    <button id="sew" class="btn btn-outline-danger">Watch</button></button>
+                </div>
+                <div>
+                    <h3>Kudoda</h3>
+                    <p>Kumenya Kuboha bidufasha gukora imyenda imeze neza, bituma dusana iyangiritse bidasabye kugura imishya, kandi kudoda ni ubumenyi bwadufasha kwiteza imbere</p>
+                    <figure>
+                        <img src="images/kudoda.jpg" alt="kudoda">
+                        <figcaption>Imashini idoda</figcaption>
+                    </figure>
+                </div>
+            </article>
         </section>
         <section>
-            <h2>Benefits of Life skills</h2>
+            <h3>Benefits of Life skills</h3>
             <article>
                 <!--benefits-->
             </article>
         </section>
         <section>
-            <h2>Conclusion</h2>
+            <h3>Conclusion</h3>
             <p>Embrace the transformative power of life skills........</p>
         </section>
         <section>
@@ -237,6 +294,19 @@
         </div>
       </div>
     </div>
+    <script>
+        (function (){
+            let braidBtn = document.getElementById('gusuka');
+            let sewBtn = document.getElementById('sew');
+
+            braidBtn.addEventListener('click', function (){
+                window.location = "https://youtu.be/nrfHnGavJCI?feature=shared";
+            });
+            sewBtn.addEventListener('click', function (){
+                window.location = "https://youtu.be/OpNU-PRxMqE?feature=shared";
+            })
+        }());
+    </script>
     <script src="js/bootstrap.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
