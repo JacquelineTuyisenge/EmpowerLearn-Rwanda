@@ -19,8 +19,13 @@
 
         }
         img{
-            width: 100%;
+            width: 90%;
             height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(112, 33, 3);
+            align-items: center;
+            justify-content: center;
+            margin: 12px;
         }
         .comment{
         background-image: url("images/comment.jpg");
@@ -32,10 +37,50 @@
         padding: 0;
         margin: 0;
     }
+    .section-1{
+        display: grid;
+        grid-template-rows: repeat(1, minmax(100px, auto));
+        margin: 60px;
+        margin-left: 350px;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .section-2{
+        margin: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .braiding, .sewing, .croche{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, auto));
+        grid-gap: 30px;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .kinya{
+        border: 1px solid rgba(65, 29, 3, 0.633);
+        box-shadow: 5px 5px 5px rgba(21, 9, 0, 0.633);
+        padding: 10px;
+    }
+    .engl{
+        border: 1px solid rgba(65, 29, 3, 0.633);
+        box-shadow: 5px 5px 5px rgba(21, 9, 0, 0.633);
+        padding: 10px;
+    }
+    .conclu{
+        width: 60%;
+        margin: 100px;
+    }
     .inputs{
         background-color: rgba(0, 0, 0, 0.392);
         align-items: center;
-        width: 50%;
+        width: 60%;
         margin-left: 200px;
         border: 3px solid rgba(65, 29, 3, 0.633);
         border-radius: 10px;
@@ -117,110 +162,179 @@
     .links ul li a{
         color: rgb(239, 242, 219);
     }
+    button{
+        width: 30%;
+        margin-left: 10px;
+    }
+    .others{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     </style>
 </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">EL-Rwanda</a>
+          <a class="navbar-brand" href="#home">EL-Rwanda</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#benefits">Benefits</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <main>
-        <section>
-            <h1>Empowerment through Life Skills: Unleashing Your Potential</h1>
+        <section id="home" class=" section-1 p-5 text-center">
+            <h1 class="text-center fw-bold p-3">Empowerment through Life Skills: Unleashing Your Potential</h1>
             <diV>
                 <p>Welcome to a world of self-sufficiency and empowerment! In this file, we embark on a journey that celebrates the art of acquiring life skills beyond traditional education. These skills, encompassing braiding, sewing, crocheting, painting, and various other crafts, are not just hobbies; they are pathways to personal development, independence, and a better quality of life</p>
             </diV>
         </section>
-        <section>
-            <h2>Embracing Life skills</h2>
+        <section id="skills" class=" section-2  p-2 text-center">
+            <h2 class="text-center fw-bold p-3">Embracing Life skills</h2>
             <p>Discover new skills that don't need school or lots of money. You can learn these skills on your own, making your life better. Let's explore:</p>
-            <article>
-            <div>
-                <h3>The art of braiding</h3>
-                <p>Not only is it a convenient hairstyle, but it serves as a protective style that will help your natural hair grow faster. It is in this way that you can embrace this skill because everytime people will have hair, and they will always need it. plus it can be done by both Genders and it really help people in making money and looking good.</p>
-                <figure>
-                    <img src="images/braids.jpg" alt="braids">
-                    <figcaption>A man being Braided in his hair</figcaption>
-                </figure>
-                <strong>few ways to start doing it:</strong>
-                <ul>
-                    
-                    <li>Get started with some hair bands and a comb.</li>
-                    <li>Practice on friends or family to improve.</li>
-                    <li>YouTube has great tutorials for beginners.</li>
-                </ul>
-                <p>here is some youtube tutorials to help you</p>
-                <br>
-                <button id="gusuka" class="btn btn-outline-danger">Watch</button>
-                <!--others-->
-            </div>
-            <hr>
-            <div>
-                <h2>Ihangire Imirimo</h2>
-                <p> Menya ubuhanga bushya budakeneye ishuri cyangwa amafaranga menshi.</p>
-                <h3>Gusuka</h3>
-                <p>Gusuka ni ubumenyi wakwiga kugiti cyawe, ugakoresha amafaranga make cyangwa se ntayo, bihoraho kuko abantu bose abfite imisatsi bahora bashsks gusa neza, kandi byakorwa nabahungu cyangwa abakobwa , bityo bigatuma biteza imbere</p>
-                <strong> uko watangira</strong>
-                <ul>
-                    <li>utangira ucamo imirongo mumutwe, ukoresheje igisokozo, ndetse numusatsi mucye</li>
-                    <li>ushobora kwigira kunshuti cyangwa se abavandimwe</li>
-                    <li>Youtbe ibyerekana neza uko bikurikirana ukaba wabasha kubyikorera nawe</li>
-                </ul>
-                <p>Aha hari video ya youtube yagufasha</p>
-                <br>
-                <button id="gusuka" class="btn btn-outline-danger">Yirebe</button>
-            </div>
+            <article class="braiding">
+                <div class=" engl text-center p-3">
+                    <h3 class="text-center fw-bold p-3">The art of braiding</h3>
+                    <p>Not only is it a convenient hairstyle, but it serves as a protective style that will help your natural hair grow faster. It is in this way that you can embrace this skill because everytime people will have hair, and they will always need it. plus it can be done by both Genders and it really help people in making money and looking good.</p>
+                    <br>
+                    <figure>
+                        <img src="images/braids.jpg" alt="braids">
+                        <figcaption class="text-center">A man being Braided in his hair</figcaption>
+                    </figure>
+                    <br>
+                    <strong>few ways to start doing it:</strong><br>
+                    <br>
+                    <ul>
+                        
+                        <li>Get started with some hair bands and a comb.</li>
+                        <li>Practice on friends or family to improve.</li>
+                        <li>YouTube has great tutorials for beginners.</li>
+                    </ul>
+                    <em>here is some youtube tutorials to help you</em>
+                    <br>
+                    <br>
+                    <button id="gusuka" class="btn btn-outline-danger">Watch</button>
+                    <!--others-->
+                </div>
+                <div class="kinya text-center p-3">
+                    <h2 class="text-center fw-bold p-3">Ihangire Imirimo</h2>
+                    <p> Menya ubuhanga bushya budakeneye ishuri cyangwa amafaranga menshi.</p>
+                    <h3 class="text-center fw-bold p-3">Gusuka</h3>
+                    <p>Gusuka ni ubumenyi wakwiga kugiti cyawe, ugakoresha amafaranga make cyangwa se ntayo, bihoraho kuko abantu bose abfite imisatsi bahora bashsks gusa neza, kandi byakorwa nabahungu cyangwa abakobwa , bityo bigatuma biteza imbere</p>
+                    <strong> uko watangira</strong><br>
+                    <ul>
+                        <li>utangira ucamo imirongo mumutwe, ukoresheje igisokozo, ndetse numusatsi mucye</li>
+                        <li>ushobora kwigira kunshuti cyangwa se abavandimwe</li>
+                        <li>Youtbe ibyerekana neza uko bikurikirana ukaba wabasha kubyikorera nawe</li>
+                    </ul>
+                    <p>Aha hari video ya youtube yagufasha</p>
+                    <br>
+                    <button id="gusuka" class="btn btn-outline-danger">Yirebe</button>
+                </div>
             </article>
-            <article>
-                <div>
-                    <h3>The art of Sewing</h3>
+            <article class="sewing text-center p-3"> 
+                <div class="engl">
+                    <h3 class="text-center fw-bold p-3">The art of Sewing</h3>
                     <p>Being able to sew enables us to make the most out of existing items that need minor repairs for a longer life span. Sewing is a skill which can help us feel more creative. It can be more budget friendly than buying something new, which has a better impact on the environment.</p>
                     <figure>
                         <img src="images/kudoda-1.jpg" alt="sewing">
-                        <figcaption>sewing picture</figcaption>
+                        <figcaption class="text-center">sewing picture</figcaption>
                     </figure>
                     <p>Before sewing anything, you must first design by drowing and knowing measures you will follow</p>
                     <button id="sew" class="btn btn-outline-danger">Watch</button></button>
                 </div>
-                <div>
-                    <h3>Kudoda</h3>
+                <div class="kinya">
+                    <h3 class="text-center fw-bold p-3">Kudoda</h3>
                     <p>Kumenya Kuboha bidufasha gukora imyenda imeze neza, bituma dusana iyangiritse bidasabye kugura imishya, kandi kudoda ni ubumenyi bwadufasha kwiteza imbere</p>
                     <figure>
                         <img src="images/kudoda.jpg" alt="kudoda">
-                        <figcaption>Imashini idoda</figcaption>
+                        <figcaption class="text-center">Imashini idoda</figcaption>
                     </figure>
+                    <p>Mbere yuko utangira kudoda Ibintu bishya urabanza ugafata ibipimo, ndetse ukanashushanya.</p>
+                    <button id="sew" class="btn btn-outline-danger">Reba Video</button>
+                </div>
+            </article>
+            <article class="croche text-center p-3" >
+                <div class="engl">
+                    <h3 class="text-center fw-bold p-3">crocheting</h3>
+                    <p>How satisfying it is to sit back and look upon the blanket, the scarf, the hat, the home decor you have made with yarn, a hook, and your hands. Sometimes it’s hard to believe that we are able to turn a ball of string into something functional that will keep us warm or bring us comfort(Moore, 2018).</p>
+                    <figure>
+                        <img src="images/kuboha.jpg" alt="crocheting">
+                    </figure>
+                    <figcaption class="text-center">crocheting</figcaption>
+                    <br>
+                    <h4 class="text-center fw-bold p-3">Some steps to start crocheting</h4>
+                    <ul>
+                        <li>Make sure you have the right yarn</li>
+                        <li>Hold crochet hook in right hand and make a slip knot on hook.</li>
+                        <li>Bring yarn over hook from back to front and grab it with hook.</li>
+                        <li>Draw hooked yarn through slip knot and onto hook. This makes one chain stitch.</li>
+                        <li>Repeat Steps 2 and 3 in sequence 28 more times. You should have 29 chain stitches and one loop will remain on hook</li>
+                        <li>skip the first chain stitch and insert the hook into the center of next chain stich, continue all the steps</li>
+                    </ul>
+                    <br>
+                    <button id="yarn" class="btn btn-outline-danger">Watch</button>
+                </div>
+                <div class=" kinya text-center p-3">
+                    <h3 class="text-center fw-bold p-3">Kuboha</h3>
+                    <p>Mbega ukuntu Biba byiza iyo wicaye ukareba ikiringiti, fulari, imipira, ingofero, imitako n'ibindi wikoreye ukoresheje byonyine urudodo n' ikoroshi. rimwe na rimwe biba bigoye kwiyumvisha ko twafata indodo tukazihinduramo ibyo bintu by'agaciro, bizatuma dushyuha, twinjiza amafaranga ndetse n'umutuzo</p>
+                    <h4 class="text-center fw-bold p-3">Uko watangira kuboha</h4>
+                    <p>abenshi turabizi, kandi nabatabizi twareba kuri youtube kuko berekana buri kantu kandi ntago bitwara amafaranga menshi ugereranyije n'umurimo uba wize gukora wazakwungura mugihe kizaza</p>
+                    <br>
+                    <button id="kuboha" class="btn btn-outline-danger">Watch</button>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <h3>Others</h3>
+                    <p>Actually there are many skills one can study that can transofrm lives of many, so what we do is standup and go find what best fits you or what you do best, be courageous and try new things will go in place.</p>
+                    <div class="others text-center p-3">
+                        <div>
+                            <img src="images/painting.jpg" alt="painting">
+                            <figcaption>Painting</figcaption>
+                        </div>
+                        <div>
+                            <img src="images/pads.jpg" alt="pads">
+                            <figcaption>you can do reusable pads</figcaption>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
-        <section>
+        <section id="benefits" class="m-5 p-5 text-center">
             <h3>Benefits of Life skills</h3>
+            <p> It helps develop eye/hand coordination, concentration, reasoning and mathematical skills, and of course pride and confidence in a finished product.</p>
+            <p>we see Life skills benefits in everyday's life. it helps us develop economically and develop intellectually</p>
             <article>
-                <!--benefits-->
+                
             </article>
         </section>
-        <section>
-            <h3>Conclusion</h3>
-            <p>Embrace the transformative power of life skills........</p>
+        <section class="Conclu p-5 text-center">
+            <h3 class="text-center p-4">Conclusion</h3>
+            <p>To sum up, the path to empowerment via life skills represents more than just learning new trades or pastimes; it's a doorway to self-improvement and independence. These abilities span a wide range of crafts, including painting, crocheting, sewing, and braiding, and they provide doors to greater freedom and a better quality of life.
+                <br>
+                <br>
+                Learning how to sew, crochet, braid, and do other crafts enables people to become independent without being restricted by a set curriculum or budget. For example, braiding not only helps with hairstyling but also provides a means of income and increases self-esteem. Sewing is more than just fixing things; it's a way to be creative and environmentally conscious by reusing things.
+                <br>
+                <br>
+                Using yarn and hooks to create useful products gives crocheting a special feeling of fulfillment. Furthermore, the encouragement to practice these talents on a personal level or through online courses shows how inclusive and accessible these empowering skills are.
+                Life skills are more important than craftsmanship. It develops one's mental faculties, encourages creativity, and instills confidence and pride in one's accomplishments. These abilities are not only useful, but they also lay the groundwork for both intellectual and economic advancement.<br>
+                <br>
+                <br>
+                In the end, developing and utilizing these life skills is the key to realizing one's potential. They encourage sustainable living, provide people the power to control their own destiny, and have a positive impact on both individual and societal well-being. People who adopt these abilities can enter a world where empowerment, inventiveness, and self-sufficiency coexist with confidence.
+            </p>
         </section>
         <section>
             <div class="comment">
@@ -273,11 +387,11 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <br>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#skills">skills</a></li>
                     <br>
-                    <li><a href="#skills">Skill Sets</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
                 </ul>
             </div>
             <div class="contact">
@@ -298,12 +412,20 @@
         (function (){
             let braidBtn = document.getElementById('gusuka');
             let sewBtn = document.getElementById('sew');
+            let yarnBtn = document.getElementById('yarn');
+            let crochetBtn = document.getElementById('kuboha');
 
             braidBtn.addEventListener('click', function (){
                 window.location = "https://youtu.be/nrfHnGavJCI?feature=shared";
-            });
+            })
             sewBtn.addEventListener('click', function (){
                 window.location = "https://youtu.be/OpNU-PRxMqE?feature=shared";
+            })
+            yarnBtn.addEventListener('click', function (){
+                window.location = "https://youtu.be/aAxGTnVNJiE?feature=shared";
+            })
+            crochetBtn.addEventListener('click', function (){
+                window.location = "https://youtu.be/OzZMNOn4Tpo?feature=shared";
             })
         }());
     </script>
