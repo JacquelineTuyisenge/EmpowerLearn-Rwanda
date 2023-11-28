@@ -4,34 +4,451 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>tech</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+       .section-1{
+        display: grid;
+        grid-template-rows: repeat(1, minmax(100px, auto));
+        margin: 60px;
+        margin-left: 350px;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .tech{
+        margin: 100px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .htmlNotes{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, auto));
+        grid-gap: 20px;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+      }
+      .cssNotes{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, auto));
+        grid-gap: 20px;
+        align-items: center;
+        padding: 20px;
+        margin: 40px;
+      }
+      a{
+        text-decoration: none;
+        color: rgb(40, 46, 1);
+        font-weight: bold;
+      }
+      .gitGitHub{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, auto));
+        grid-gap: 20px;
+        align-items: center;
+        padding: 20px;
+        margin: 40px;
+        width: 70%;
+        height: auto;
+      }
+      input[type="text"], input[type="email"], textarea[type="comment"] {
+        background-color: rgba(0, 0, 0, 0.471);
+        border: none;
+        border-bottom: 2px solid rgba(93, 40, 2, 0.633);
+        color: rgb(239, 242, 219);
+        padding: 10px;
+    }
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+        outline: none;
+        border: none;
+    }
+   
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgb(20, 30, 1);
+            text-align: justify;
+        }
+        body {
+            background-color: rgba(240, 174, 116, 0.975);
+
+        }
+        img{
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(112, 33, 3);
+            align-items: center;
+            justify-content: center;
+            margin: 12px;
+        }
+        .comment{
+        background-image: url("images/comment.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-position-y: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    form{
+        padding: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        background-color: rgb(102, 38, 4);
+        color: rgb(239, 242, 219);
+        border-radius: 30px;
+        border: none;
+        width: 50%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .btn:hover{
+        color: white;
+        background-color: rgb(51, 19, 2);
+    }
+   
+    .get_in_touch{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+      input[type="text"], input[type="email"], textarea[type="comment"] {
+        background-color: rgba(0, 0, 0, 0.471);
+        border: none;
+        border-bottom: 2px solid rgba(93, 40, 2, 0.633);
+        color: rgb(239, 242, 219);
+        padding: 10px;
+    }
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+        outline: none;
+        border: none;
+    }
+    .copyright{
+        color: white;
+        text-align: center;
+        font-size: 13px;
+    }
+    .footer{
+        background-color: rgba(149, 107, 70, 0.975);
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 30px;
+        margin-right: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    .get_in_touch{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    li{
+        list-style: none;
+    }
+    .links ul{
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    i{
+        color: rgb(102, 38, 4);
+        font-size: 20px;
+    }
+    i:hover{
+        color: rgb(245, 106, 36);
+    }
+    .links ul li a{
+        color: rgb(239, 242, 219);
+    }
+    button{
+        width: 30%;
+        margin-left: 10px;
+    }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">EL-Rwanda</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">EL-Rwanda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#html">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#css">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#git">Git & Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home" class=" section-1 p-5 text-center">
+        <h1 class="text-center fw-bold p-3">Welcome to EmpowerLearn-Rwanda: Empowering Through Tech</h1>
+        <diV>
+            <p>EmpowerLearn-Rwanda is a groundbreaking web application aimed at empowering Rwandan youths, with a special emphasis on girls and young women, by providing a comprehensive range of non-formal educational resources focused on technical skills and digital literacy.</p>
+        </diV>
+    </section>
+    <section>
+      <div class="tech">
+        <h2>Tech Empowerment at EmpowerLearn-Rwanda</h2>
+        <em>Unloacking Digital Success</em>
+        <p>In a rapidly evolving technological landscape, EmpowerLearn-Rwanda equips youths with essential technical skills necessary for success. Our curriculum delves into:</p>
+      </div>
+      <article  id="html" class="htmlNotes">
+        <div class="htmlContent m-3 p-3 shadow">
+          <h3>HTML</h3>
+          <br>
+          <img src="images/tags.png" class="img-fluid " alt="HTML"><br>
+          <figcaption class="text-center"><em>html tags example</em></figcaption><br>
+          <p>HTML stands for HyperText Markup Language. It is the standard markup language used for creating and structuring web pages and web applications. HTML uses a system of tags and elements to annotate text, images, multimedia, and other content to describe the structure of a web page.</p>
+          <p>HTML provides a framework to define the different parts of a web page, such as headings, paragraphs, links, images, tables, forms, and more. These elements are structured within the HTML document using tags, which are enclosed within angle brackets &lt;&gt;, and at the end for closing tag  is like &lt;.../&gt;. but some tags does not have closing tag because tgey close themselves: for example like: meta, which goes in head tag, link tag which goes in head tag too, and others.  </p>
+          <p>Web browsers interpret HTML documents and render them into visible web pages that users can view and interact with on the internet. HTML works alongside other technologies like Cascading Style Sheets (CSS) for styling and layout, and JavaScript for adding interactivity to create dynamic web experiences.</p>
+        </div>
+        <div class="htmlExample m-3 p-3 shadow-lg">
+          <h3>HTML tags and what they do</h3>
+            <!-- html tags and what they do -->
+            <p>&lt;html&gt; : This tag is used to define the root element of an HTML document.</p>
+            <p>&lt;head&gt; : This tag is used to define the head section of an HTML document, it contains meat information about the document such as title, links, and other metadata.</p>
+            <p>&lt;title&gt; : this contains the tile of a web page.</p>
+            <p>&lt;body&gt; : This tag is used to define the body section of an HTML document, it contains the content of the web page.</p>
+            <p>&lt;h1&gt; : This tag is used to define the heading of a web page. they start from h1 up to h6 and that is how the size decreases. means that h1 is bigger than h6.</p>
+            <p>&lt;p&gt; : This tag is used to define the paragraph of a web page, they can be many paragraph tags in heading tag.</p>
+            <p>&lt;img&gt; : This tag is used to define the image of a web page.</p>
+            <p>&lt;a&gt; : This tag is used to define the link of a web page.</p>
+            <p>&lt;ul&gt; : This tag is used to define the unordered list of a web page.</p>
+            <p>&lt;ol&gt; : This tag is used to define the ordered list of a web page.</p>
+            <p>&lt;li&gt; : This tag is used to define the list item of a web page.</p>
+            <p>&lt;table&gt; : This tag is used to define the table of a web page.</p>
+            <p>&lt;tr&gt; : This tag is used to define the table row of a web page.</p>
+            <p>&lt;td&gt; : This tag is used to define the table data of a web page.</p>
+            <p>&lt;th&gt; : This tag is used to define the table header of a web page.</p>
+            <p>&lt;form&gt; : This tag is used to define the form of a web page.</p>
+            <p>&lt;input&gt; : This tag is used to define the input of a web page.</p>
+            <p>&lt;span&gt; : This tag is used to define the span of a web page.</p>
+        </div>
+      </article>
+      <article id="css" class="cssNotes">
+        <div class="cssContent m-3 p-3 shadow">
+          <h3>CSS</h3>
+          <br>
+          <img src="images/cSs.png" class="img-fluid " alt="CSS">
+          <figcaption class="text-center">css example</figcaption>
+          <br>
+          <p> .class: this target the class in the html file e.g: .dimension in above picture</p>
+          <p> #id: this target the id in the html file</p>
+          <p> element: this target the element in the html file</p>
+          <p>CSS stands for Cascading Style Sheets. It is a styling language used to describe the presentation and layout of HTML documents. CSS allows web developers to control the visual appearance of web pages, including the design, colors, layout, fonts, and more. Here are some key points about CSS:</p>
+          <strong>Basic structure of css</strong>
+          <ol>
+            <li>Selectors: CSS selectors target HTML elements based on their type, class, ID, attributes, or relationship with other elements.</li>
+            <li>Properties: CSS properties control the appearance and behavior of the selected elements(e.g: colors, dont-size, margin,..)</li>
+            <li>Values: CSS values are the actual values that are assigned to the properties of the selected elements ()e.g: hex colors, pixels values, percentages, vh and others .</li>
+          </ol>
+          <br>
+          <strong>How is it Used?</strong>
+          <p>CSS is used to style the HTML elements of a web page.</p>
+          <p>CSS can be applied to any HTML element, they can be applied directly within an html document using &lt;style&gt; tag inside &lt;head&gt; section, and they can be stored in separate ".css" files and be linked to html documents using the &lt;link&gt; tag. this allows multiple pages to sahre the same styles</p>
+        </div>
+      </article>
+      <article>
+        <div id="git" class="gitGitHub m-3 p-3 shadow-lg">
+          <h3>Git & GitHub</h3>
+          <p>Git is a distributed version control system used for tracking changes in source code during software development. It allows multiple developers to collaborate on projects, enabling them to work on different versions of files, merge changes, and maintain a complete history of revisions. </p>
+          <br>
+          <p>GitHub, on the other hand, is a web-based hosting service and platform that utilizes Git for version control. It provides a graphical interface and additional features like issue tracking, pull requests, code review tools, and project management capabilities on top of Git. GitHub serves as a central hub for collaboration, allowing developers to host Git repositories, share code, contribute to open-source projects, and collaborate seamlessly with others, enhancing team productivity and facilitating open-source community contributions.</p>
+        </div>
+        <div class="gitContent m-4 p-4 shadow">
+          <h3>Basic Git commands</h3>
+          <p>Initialize a Repository:</p>
+          <ul><li>'git init': Initializes a new Git repository in the current directory.</li></ul>
+          <p>Check Status</p>
+          <ul><li>'git status': Checks the status of the current Git repository.</li></ul>
+          <p>Stage Changes</p>
+          <ul>
+            <li>'git add .': Adds all changes to the staging area. <br><b>OR</b></li>
+            <li>'git add [file]': Adds the specified file to the staging area.</li>
+          </ul>
+          <p>Commit Changes</p>
+          <ul><li>'git commit -m [message]': Commits the staged changes with a message.</li></ul>
+          <p>View Commits</p>
+          <ul><li>'git log': Views the commit history.</li></ul>
+          <p>create Branches</p>
+          <ul>
+            <li>'git branch [name]': Creates a new branch with the specified name.</li>
+            <li>'git checkout [name]': Switches to the specified branch.</li>
+          </ul>
+          <P>Merge Branches</P>
+          <ul><li>'git merge [name]': Merges the specified branch into the current branch.</li></ul>
+          <p>Remote Repositories</p>
+          <ul>
+            <li>'git remote add [name] [url]': Adds a remote repository with the specified name and URL.</li>
+            <li>git push -u origin [branch_name]: Pushes local commits to a remote repository </li>
+          </ul>
+          <p>Updating Local Repository:</p>
+          <ul><li>'git pull [remote] [branch]': Pulls changes from a remote repository.</li></ul>
+          <br><br>
+          <br><br>
+          <div class="github m-4 p-4 shadow text-center">
+            <h4>Getting Started with GitHub</h4>
+            <p>Create an account on github</p>
+            <a href="https://github.com/">GitHub</a>
+            <br>
+            <p class="fw-bold">Setting up Git Configuration with your username and user email</p>
+            <p>git config --global user.name "Your Name"</p>
+            <p>git config --global user.email "Your Email"</p>
+            <p>Creating a new repository</p>
+            <ul>
+              <li>Click on the '+' icon in the top right corner and select "New repository</li>
+              <li>Give it a name, add a description, choose public/private, and click "Create repository.</li>
             </ul>
+            <p>. Initializing a Local Repository and Linking to GitHub:<br>
+              From Command Line:
+            </p>
+              <ul>
+                <li>Navigate to the local directory you want to initialize with Git</li>
+                <li>git init</li>
+                <li>Link your local repository to the remote one created on GitHub: :git remote add origin "github_repository_url"</li>
+                <li>Stage and commit changes as needed, then ush changes to Github :git push -u origin master</li>
+              </ul>
+            <p class="fw-bold">Collaborating on GitHub:</p>
+            <p>Cloning a Repository</p>
+            <ul>
+              <li>git clone "github_repository_url: this Dowloads a repository to your local machine."</li>
+            </ul>
+            <p>Forking a Repository</p>
+            <small>forking a repository is the process of creating a copy of an existing repository on GitHub.: Click the "Fork" button on a repository to create your copy.</small>
+            <p>Creating a Pull Request</p>
+            <small>Creating a Pull Request is the process of merging changes from your local repository into the remote repository.<br> After making changes in your forked repository, create a pull request to propose changes to the original repository. </small>
           </div>
         </div>
-      </nav>
-    <h1>Hello, world!</h1>
+      </article>
+      <article class="recomendation">
+        <div class="recomend m-3 p-3 shadow-lg">
+          <h4>There are many free ways to learn web development as a beginners</h4>
+          <p><a href="https://www.freecodecamp.org">Freecodecamp</a></p>
+          <p><a href="https://www.udemy.com">Udemy</a></p>
+          <p><a href="https://www.codecademy.com">Codecademy</a></p>
+          <button type="button" id="techbtn" class="btn btn-success">Net Ninja Youtube</button>
+          <br>
+          <br>
+          <p><strong>There are other many sites from which you can study html, css, and others. what younust have to do is to be commited and love it.</strong></p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <div class="comment">
+        <h2 class="text-center fw-bolder text-dark p-4">CONTACT US</h2>
+        <br>
+        <div class="inputs align-items-center justify-content-center">
+            <form action="connect.php" method="POST">
+                <h3 class="text-center fw-bold p-3">Got Comments on EL-Rwanda?</h3>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Enter your Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Enter your Email</label>
+                    <input type="email"  class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Enter your Comment</label>
+                    <textarea type="comment" class="form-control" rows="4" id="message" placeholder="Write here.." name="comment" required></textarea>
+                </div>
+                <fieldset>
+                    <legend>Type</legend>
+                        <label>
+                            Complaint<input type="radio" name="type" value="1">
+                        </label>
+                        <label>
+                            Suggestion<input type="radio" name="type" value="2" checked>
+                        </label>
+                </fieldset>
+                <div class=" button mb-3">
+                    <button type="submit" value="submit" class="btn" id="submit" name="btn">Comment</button>
+                </div>
+                    
+            </form>
+        </div>
+        <br>
+    </div>
+</section>
+</main>
+<div class="footer">
+<div class="get_in_touch">
+    <div class="connect_">
+        <ul class="social-media-list">
+            <li><a href="https://www.facebook.com/Jacky Sage" target="_blank"><i class='bx bxl-facebook-circle'></i></a>facebook</li>
+            <li><a href="https://twitter.com/tuyisenge_jacky" target="_blank"><i class='bx bxl-twitter'></i></a> twitter</li>
+            <li><a href="https://www.instagram.com/jacky.sage" target="_blank"><i class='bx bxl-instagram-alt'></i></a> instagram</li>
+            <li><a href="https://www.linkedin.com/in/Tuyisenge Jacqueline" target="_blank"><i class='bx bxl-linkedin'></i></a> linkedin</li>
+            <li><a href="https://github.com/JacquelineTuyisenge" target="_blank"><i class='bx bxl-github'></i></a> github</li>
+          </ul>                          
+    </div>
+    <div class="links">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <br>
+            <li><a href="#home">HTML</a></li>
+            <br>
+            <li><a href="#css">CSS</a></li>
+            <br>
+            <li><a href="#git">Git and Github</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <ul>
+            <li><i class='bx bx-map'></i>Kigali/Gasabo</li>
+            <li><a href="tel:+250788238508" class="text-white"><i class='bx bx-phone'></i></a>Telephone</li>
+            <li><a href="mailto:tuyisengejacqui2002@gmail.com" class="text-white"><i class='bx bx-envelope'></i></a>Email</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="copyright">
+    <p class="copyright">Copyright &copy; 2023 EmpowerLearn-Rwanda. All rights reserved.</p>
+</div>
+</div>
+    </section>
+    </main>
+    <script>
+      (function (){
+        "use strict"
+
+        const techbtn = document.getElementById('techbtn');
+
+        techbtn.addEventListener('click', () => {
+          window.open('https://youtu.be/hu-q2zYwEYs?feature=shared');
+        })
+      })();
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
