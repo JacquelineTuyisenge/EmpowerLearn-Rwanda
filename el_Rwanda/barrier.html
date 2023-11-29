@@ -4,34 +4,383 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Breaking barriers</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      *{
+        width: 100%;
+        text-align: justify;
+        box-sizing: border-box;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      body{
+        background-image: url(images/pads.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-position-y: 100%;
+        animation: moveBackground 10s linear infinite;
+        padding: 0;
+        margin: 0;
+      }
+      .container{
+        background-color: rgba(229, 178, 144, 0.567);
+        text-align: justify;
+      }
+      .container p{
+        text-align: justify;
+      }
+      @keyframes moveBackground {
+        0% {
+          /* Initial background position */
+          background-position: 60% 40%;
+        }
+        100% {
+          /* Final background position */
+          background-position: 100% 0; /* Adjust as needed */
+        }
+      }
+      .section-2{
+        background-color: rgba(21, 9, 0, 0.703);
+        color: white;
+      }
+      .mens p{
+        text-align: justify;
+      }
+      .cycle{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+      }
+      img{
+            width: 90%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px rgba(240, 72, 5, 0.625);
+            align-items: center;
+            justify-content: center;
+            margin: 12px;
+            opacity: 0.5;
+        }
+        .section-3{
+          background-image: url(images/fbm.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center center;
+          background-position-y: 100%;
+          padding: 0;
+          margin: 0;
+          color: wheat;
+        }
+        .section-4{
+          background-color: rgba(21, 9, 0, 0.703);
+          color: rgb(213, 219, 196);
+          padding: 0;
+          margin: 0;
+        }
+        .get_in_touch{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    li{
+        list-style: none;
+    }
+    .links ul{
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    i{
+        color: rgb(102, 38, 4);
+        font-size: 20px;
+    }
+    i:hover{
+        color: rgb(245, 106, 36);
+    }
+    .links ul li a{
+        color: rgb(239, 242, 219);
+    }
+    button{
+        width: 30%;
+        margin-left: 10px;
+    }
+    .comment{
+        background-image: url("images/comment.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-position-y: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    form{
+        padding: 10px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        background-color: rgb(102, 38, 4);
+        color: rgb(239, 242, 219);
+        border-radius: 30px;
+        border: none;
+        width: 50%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .btn:hover{
+        color: white;
+        background-color: rgb(51, 19, 2);
+    }
+   
+    .get_in_touch{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+      input[type="text"], input[type="email"], textarea[type="comment"] {
+        background-color: rgba(0, 0, 0, 0.471);
+        border: none;
+        border-bottom: 2px solid rgba(93, 40, 2, 0.633);
+        color: rgb(239, 242, 219);
+        padding: 10px;
+    }
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+        outline: none;
+        border: none;
+    }
+    .copyright{
+        color: white;
+        text-align: center;
+        font-size: 13px;
+    }
+    .footer{
+        background-color: rgba(24, 11, 1, 0.501);
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 30px;
+        margin-right: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">EL-Rwanda</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">EL-Rwanda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menstruation">Menstruation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mens">Menstrual Cycle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fbm">FreeBeingMe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gbv">GBV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#support">Support Centers</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    <h1>Hello, world!</h1>
+      </div>
+    </nav>
+    <section class="section-1">
+        <div id="home"class="container text-center m-5 p-5 shadow-lg">
+          <h1>Breaking Barriers</h1>
+          <p>Welcome to Breaking Barriers, an initiative committed to breaking down societal barriers and empowering Rwandan youth, particularly girls, through knowledge, resources, and support. <br>Dive deeper into critical subjects such as menstrual health and circle, where we aim to destigmatize conversations and provide essential information. Explore programs like 'Free Being Me' that foster self-confidence and empowerment among young individuals. Moreover, we confront the issue of gender-based violence by providing resources and strategies to address and prevent it.<br> Discover valuable information about support centers available to offer guidance and assistance for those in need.</p>
+        </div>
+    </section>
+    <section class="section-2 p-5">
+      <div id="menstruation"class="mens text-center m-3 p-3 shadow-lg">
+        <h1>menstrual Health and circle</h1>
+        <h2 class="text-danger">Menstruation:</h2>
+        <p>Menstruation, or period, is normal vaginal bleeding that occurs as part of a woman's monthly cycle. Every month, your body prepares for pregnancy. If no pregnancy occurs, the uterus, or womb, sheds its lining.</p>
+        <br>
+        <p>In our Rwandan culture, Menstruation was seen as taboo, where there were certain activivities girls and women were not allowed to do while they were in it like: carrying babies, adding salt in food, and others</p>
+        <br>
+        <h2 class="text-danger">Breaking the Stigma: Embracing Menstruation</h2>
+        <p>At Breaking Barriers, we celebrate menstruation as a natural and healthy aspect of life. It signifies good health and the incredible ability to bring life into the world. Let's shift the narrative, menstruation is not a taboo but a symbol of strength and vitality. It's a sign that you are healthy and capable of nurturing life. Let's take pride in this natural process and create a supportive environment where open conversations about menstruation are encouraged, celebrated, and embraced.</p>
+      </div>
+      <div class="mens cycle text-center m-5 p-5 shadow-lg">
+        <div id="mens"class="regular">
+          <h1>Tracking Menstrual Cycles: A Simple Guide</h1>
+          <b><em>For Regular Cycles:</em></b>
+          <br><br>
+          <p>Start Tracking: Begin by marking the first day of your period on a calendar(That is the first day of yur circle)</p>
+          <p>Count Days: Continue marking until the next period, the day before next period is the last day of your circle so you count those days. menstrual cycle ranges from 21 to 35 days, with the average being around 28 days. try this for several months and do the average, then that is days of your circle</p>
+          <p class="text-warning">Ovulation Prediction: Around the middle of your cycle (approximately 14 days before your next period), you're likely to ovulate. This is the best time for conception if you're planning for pregnancy.</p>
+          <p>Symptom Monitoring: Note any physical or emotional changes, like mood swings or physical discomfort, throughout your cycle. It helps understand your body's patterns.</p>
+        </div>
+        <div class="irregular">
+          <h1>Tracking Menstrual Cycles: A Simple Guide</h1>
+          <b><em>For Irregular Cycles:</em></b>
+          <br><br>
+          <p>Observation: Even with irregular cycles, tracking is helpful. Start marking the first day of your period as day one each cycle.</p>
+          <p>Record Variations: Note the duration and patterns of each cycle. This can help identify trends or irregularities over time. keep doing that for atleast six months then you will do average to find out the range of your cycle.</p>
+          <p class="lead">Self-Care: Prioritize self-care during menstruation with adequate rest, hydration, and managing discomfort.
+            Remember, every person's menstrual cycle is unique. Regular tracking helps in understanding individual patterns and seeking necessary support or advice if needed.</p>
+          <p>See more to Menstrual Health Management: <a class="text-warning text-decoration-none"href="https://www.washcluster.net/taxonomy/term/9406">Menstrual Health Management</a></p>
+        </div>
+      </div>
+      <div class="m-5 p-5">
+        <figure>
+          <img src="images/cycle.png" alt="menstrual cycle">
+        </figure>
+        <figcaption><em>Menstrual Cycle</em></figcaption>
+      </div>
+    </section>
+    <section class="section-3 p-5">
+      <div id="fbm"class="text-center container-fluid ">
+        <h1 class="text-center fw-bold p-3 m-3">Empowering through 'Free Being Me'</h1>
+        <p>Free Being Me (FBM) is an educational programme that promotes body confidence and a world free from appearance-related anxiety.</p>
+        <p>Beauty standards are a set of values applied to the appearance of both men and women to be regarded as beautiful and handsome in order to rightly fit in the community. This puts pressure to other people who does not have that values, it reduces one's confidence because they feel like they are not beautiful. it can cause depression, low self-esteem, and even suicide. </p>
+        <p>Body talk related to free being me: is a way people critisize one's body in a way that makes them unconfortable. for example: "HY Jolie, don't tell me that you are still eating with this your weight", "Aline i think why don't you eat much food? look at how you look you are so slim", ...Actualy this seems like normal, but inside the one who is being told this is the one who knows how it feels. actually it affects them, so let us help one onothers by not Body talking!. </p>
+        <br>
+        <p>FreeBeingMe helps us to build body confidence, to love ourselves and to teach it to others, and Free Being Me recognizes that building confidence is a gradual process, emphasizing the importance of small, consistent steps toward self-acceptance.</p>
+        <h2>Know this!</h2>
+        <p>You can find Free being me package on website of <a class="text-warning text-decoration-none" href="https://www.wagggs.org/en/what-we-do/free-being-me/"> WAGGGS</a></p>
+      </div>
+    </section>
+    <section class="section-4">
+      <div id="gbv"class="text-center content p-4 shadow-lg">
+        <h1 class="text-center fw-bold p-3 m-3">Addressing Gender-Based Violence:</h1>
+        <p>Gender-based violence refers to any type of harm that is perpetrated against a person or group of people because of their factual or perceived sex, gender</p>
+        <p>There are four main Types of GBV:</p>
+        <ul>
+          <li>Physical Violence: refers to any act causing physical harm or injury, such as hitting, punching, or restraining someone based on their gender.</li>
+          <li>Sexual Violence: Non-consensual sexual acts, harassment, assault, or exploitation, touch,..</li>
+          <li>Emotional/Psychological Violence: Controlling behaviors, threats, intimidation, or verbal abuse causing emotional harm and hateful speech.</li>
+          <li>Economic Violence: Financial control, deprivation of resources, or employment-related discrimination.</li>
+        </ul>
+        <h3>Combatting Gender-Based Violence:</h3>
+        <img src="images/violence.jpg" alt="violence">
+        <ul>
+          <li>Raising Awareness: By making people aware of the violence, awakes them to start seeing the truth.</li>
+          <li>Recognizing Signs: Educating individuals to identify signs of violence, empowering them to seek help and support.</li>
+          <li>Support for Survivors: Creating safe spaces for survivors to share their experiences, access counseling services, and connect with support networks. Listening to them and help them reach the one who can help them.</li>
+        </ul>
+        <img src="images/violenve-1.jpg" alt="violence">
+        <h3>Effects of Gender-Based Violence:</h3>
+        <p>GBV leaves profound and long-lasting effects on individuals, causing physical injuries, mental health issues like anxiety and depression, trauma, and emotional distress. It disrupts lives, perpetuates cycles of violence, and hampers individual growth and societal progress.</p>
+        <br>
+        <p>Breaking Barriers stands firm in advocating for an end to GBV through education, support, and active efforts to create a society free from violence and discrimination. Together, we can combat GBV by promoting respect, equality, and creating safe spaces for all individuals.</p>
+      </div>
+      <div id="support"class="content text-center m-5 p-5">
+        <h3>Unlocking Information on Support Centers:</h3>
+        <p>There are many help centers in Rwanda that supports in fighting gender-based violence. among them there are:</p>
+        <ul>
+          <li>RIB: 116</li>
+          <li>Police: 112</li>
+          <li>Isange One stop Center: 3029</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="comment">
+        <h2 class="text-center fw-bolder text-dark p-4">CONTACT US</h2>
+        <br>
+        <div class="inputs align-items-center justify-content-center">
+            <form action="connect.php" method="POST">
+                <h3 class="text-center fw-bold p-3">Got Comments on EL-Rwanda?</h3>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Enter your Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Enter your Email</label>
+                    <input type="email"  class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Enter your Comment</label>
+                    <textarea type="comment" class="form-control" rows="4" id="message" placeholder="Write here.." name="comment" required></textarea>
+                </div>
+                <fieldset>
+                    <legend>Type</legend>
+                        <label>
+                            Complaint<input type="radio" name="type" value="1">
+                        </label>
+                        <label>
+                            Suggestion<input type="radio" name="type" value="2" checked>
+                        </label>
+                </fieldset>
+                <div class=" button mb-3">
+                    <button type="submit" value="submit" class="btn" id="submit" name="btn">Comment</button>
+                </div>
+                    
+            </form>
+          </div>
+        <br>
+      </div>
+    </section>
+  </main>
+<div class="footer">
+<div class="get_in_touch">
+    <div class="connect_">
+        <ul class="social-media-list">
+            <li><a href="https://www.facebook.com/Jacky Sage" target="_blank"><i class='bx bxl-facebook-circle'></i></a>facebook</li>
+            <li><a href="https://twitter.com/tuyisenge_jacky" target="_blank"><i class='bx bxl-twitter'></i></a> twitter</li>
+            <li><a href="https://www.instagram.com/jacky.sage" target="_blank"><i class='bx bxl-instagram-alt'></i></a> instagram</li>
+            <li><a href="https://www.linkedin.com/in/Tuyisenge Jacqueline" target="_blank"><i class='bx bxl-linkedin'></i></a> linkedin</li>
+            <li><a href="https://github.com/JacquelineTuyisenge" target="_blank"><i class='bx bxl-github'></i></a> github</li>
+          </ul>                          
+    </div>
+    <div class="links">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <br>
+            <li><a href="#menstruation">Menstruation</a></li>
+            <br>
+            <li><a href="#mens">Menstrual Cycle</a></li>
+            <br>
+            <li><a href="#fbm">FreeBeingMe</a></li>
+            <br>
+            <li><a href="#gbv">GBV</a></li>
+            <br>
+            <li><a href="#support">Support Centers</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <ul>
+            <li><i class='bx bx-map'></i>Kigali/Gasabo</li>
+            <li><a href="tel:+250788238508" class="text-white"><i class='bx bx-phone'></i></a>Telephone</li>
+            <li><a href="mailto:tuyisengejacqui2002@gmail.com" class="text-white"><i class='bx bx-envelope'></i></a>Email</li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div class="copyright">
+    <p class="copyright">Copyright &copy; 2023 EmpowerLearn-Rwanda. All rights reserved.</p>
+</div>
+</div>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

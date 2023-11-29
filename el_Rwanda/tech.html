@@ -70,13 +70,41 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: rgb(20, 30, 1);
+            color: rgb(235, 233, 206);
             text-align: justify;
         }
         body {
-            background-color: rgba(240, 174, 116, 0.975);
-
+            background-image: url(images/tech.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-position-y: 100%;
+            animation: moveBackground 10s linear infinite;
+            padding: 0;
+            margin: 0;
         }
+        body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(167, 111, 89, 0.337);
+        z-index: -1;
+        position: fixed;
+    }
+        @keyframes moveBackground {
+        0% {
+          /* Initial background position */
+          background-position: 60% 40%;
+        }
+        100% {
+          /* Final background position */
+          background-position: 100% 0; /* Adjust as needed */
+        }
+      }
         img{
             width: 90%;
             height: auto;
@@ -143,7 +171,7 @@
         font-size: 13px;
     }
     .footer{
-        background-color: rgba(149, 107, 70, 0.975);
+        background-color: rgba(16, 7, 1, 0.501);
         width: 100%;
         text-align: center;
         align-items: center;
@@ -154,11 +182,6 @@
         left: 0;
         bottom: 0;
         box-sizing: border-box;
-    }
-    .get_in_touch{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
     }
     li{
         list-style: none;
@@ -209,8 +232,8 @@
       </div>
     </nav>
     <main>
-      <section id="home" class=" section-1 p-5 text-center">
-        <h1 class="text-center fw-bold p-3">Welcome to EmpowerLearn-Rwanda: Empowering Through Tech</h1>
+      <section id="home" class=" section-1 p-3 text-center">
+        <h1 class="text-center fw-bold m-5 p-5">Welcome to EmpowerLearn-Rwanda: Empowering Through Tech</h1>
         <diV>
             <p>EmpowerLearn-Rwanda is a groundbreaking web application aimed at empowering Rwandan youths, with a special emphasis on girls and young women, by providing a comprehensive range of non-formal educational resources focused on technical skills and digital literacy.</p>
         </diV>
@@ -317,8 +340,7 @@
           <br><br>
           <div class="github m-4 p-4 shadow text-center">
             <h4>Getting Started with GitHub</h4>
-            <p>Create an account on github</p>
-            <a href="https://github.com/">GitHub</a>
+            <p>Create an account on <a href="https://github.com/" class="text-white">GitHub</a></p>
             <br>
             <p class="fw-bold">Setting up Git Configuration with your username and user email</p>
             <p>git config --global user.name "Your Name"</p>
@@ -352,9 +374,9 @@
       <article class="recomendation">
         <div class="recomend m-3 p-3 shadow-lg">
           <h4>There are many free ways to learn web development as a beginners</h4>
-          <p><a href="https://www.freecodecamp.org">Freecodecamp</a></p>
-          <p><a href="https://www.udemy.com">Udemy</a></p>
-          <p><a href="https://www.codecademy.com">Codecademy</a></p>
+          <p><a href="https://www.freecodecamp.org" class="text-white">Freecodecamp</a></p>
+          <p><a href="https://www.udemy.com" class="text-white">Udemy</a></p>
+          <p><a href="https://www.codecademy.com" class="text-white">Codecademy</a></p>
           <button type="button" id="techbtn" class="btn btn-success">Net Ninja Youtube</button>
           <br>
           <br>
@@ -415,7 +437,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <br>
-            <li><a href="#home">HTML</a></li>
+            <li><a href="#html">HTML</a></li>
             <br>
             <li><a href="#css">CSS</a></li>
             <br>
