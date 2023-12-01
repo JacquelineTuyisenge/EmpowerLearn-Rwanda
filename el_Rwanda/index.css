@@ -7,7 +7,7 @@
     }
 
     body {
-        background-image: url(images/sec-1.jpg);
+        background-image: url(sec-1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -273,7 +273,7 @@
         color: rgb(239, 242, 219);
     }
     .comment{
-        background-image: url("images/comment.jpg");
+        background-image: url("comment.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
