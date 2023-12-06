@@ -282,20 +282,10 @@
         padding: 0;
         margin: 0;
     }
-    .message{
-        display: grid;
-        grid-template-rows: repeat(2, minmax(100px, auto));
-        grid-row-gap: 15px;
-    }
-    .display-comments{
-        border: 2px solid orange;
-        box-shadow: 3px 3px 3px 3px black;
-        margin: 30px;
-        background-color: rgba(0, 0, 0, 0.392);
-    }
     .inputs{
         background-color: rgba(0, 0, 0, 0.392);
         align-items: center;
+        text-align: center;
         width: 50%;
         margin-left: 200px;
         border: 3px solid rgba(65, 29, 3, 0.633);
@@ -418,36 +408,6 @@
     .links ul li a{
         color: rgb(239, 242, 219);
     }
-
-        /* Modal styles */
-    .modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 9999;
-    }
-    .hidden{
-        display: none;
-    }
-    
-    .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        padding: 20px;
-    }
-    
-    /* Close button style */
-    .close {
-        float: right;
-        cursor: pointer;
-    }
   
     @keyframes moveBackground {
         0% {
@@ -488,6 +448,21 @@
         }
         .section-4{
             text-align: center;
+        }
+        .section-5{
+            text-align: center;
+            width: auto;
+        }
+        .inputs{
+            background-color: rgba(0, 0, 0, 0.392);
+            align-items: center;
+            text-align: center;
+            width: auto;
+            margin: 10px;
+            border: 3px solid rgba(65, 29, 3, 0.633);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(112, 33, 3);
         }
         .description{
             margin: auto;
