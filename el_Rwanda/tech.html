@@ -204,6 +204,32 @@
         width: 30%;
         margin-left: 10px;
     }
+    @media only screen and (max-width: 800px){
+      .get_in_touch{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-gap: 30px;
+        }
+        .section-1{
+        display: grid;
+        grid-template-rows: repeat(1, minmax(100px, auto));
+        margin: 30px;
+        margin-left: 30%;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .htmlNotes{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, auto));
+        grid-gap: 20px;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+      }
+    }
     </style>
   </head>
   <body>
@@ -232,10 +258,10 @@
       </div>
     </nav>
     <main>
-      <section id="home" class=" section-1 p-3 text-center">
+      <section id="home" class="section-1 p-3 text-center">
         <h1 class="text-center fw-bold m-5 p-5">Welcome to EmpowerLearn-Rwanda: Empowering Through Tech</h1>
         <diV>
-            <p>EmpowerLearn-Rwanda is a groundbreaking web application aimed at empowering Rwandan youths, with a special emphasis on girls and young women, by providing a comprehensive range of non-formal educational resources focused on technical skills and digital literacy.</p>
+            <p class="p-5">EmpowerLearn-Rwanda is a groundbreaking web application aimed at empowering Rwandan youths, with a special emphasis on girls and young women, by providing a comprehensive range of non-formal educational resources focused on technical skills and digital literacy.</p>
         </diV>
     </section>
     <section>

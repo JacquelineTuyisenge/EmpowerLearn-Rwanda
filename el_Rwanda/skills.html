@@ -170,6 +170,49 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    @media only screen and (max-width: 800px){
+        .section-1{
+        width: auto;
+        display: grid;
+        grid-template-rows: repeat(1, minmax(100px, auto));
+        margin: 20px;
+        margin-left: 30%;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+        .braiding, .sewing, .croche{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, auto));
+        grid-gap: 30px;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .others{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inputs{
+            background-color: rgba(0, 0, 0, 0.392);
+            align-items: center;
+            text-align: center;
+            width: auto;
+            margin: 10px;
+            border: 3px solid rgba(65, 29, 3, 0.633);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(112, 33, 3);
+    }
+    .get_in_touch{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-gap: 30px;
+        }
+    }
     </style>
 </head>
   <body>
@@ -195,10 +238,10 @@
         </div>
       </nav>
       <main>
-        <section id="home" class=" section-1 p-5 text-center">
+        <section id="home" class=" section-1 text-center">
             <h1 class="text-center fw-bold p-3">Empowerment through Life Skills: Unleashing Your Potential</h1>
             <diV>
-                <p>Welcome to a world of self-sufficiency and empowerment! In this file, we embark on a journey that celebrates the art of acquiring life skills beyond traditional education. These skills, encompassing braiding, sewing, crocheting, painting, and various other crafts, are not just hobbies; they are pathways to personal development, independence, and a better quality of life</p>
+                <p class="p-2">Welcome to a world of self-sufficiency and empowerment! In this file, we embark on a journey that celebrates the art of acquiring life skills beyond traditional education. These skills, encompassing braiding, sewing, crocheting, painting, and various other crafts, are not just hobbies; they are pathways to personal development, independence, and a better quality of life</p>
             </diV>
         </section>
         <section id="skills" class=" section-2  p-2 text-center">
@@ -302,7 +345,7 @@
                     <p>Actually there are many skills one can study that can transofrm lives of many, so what we do is standup and go find what best fits you or what you do best, be courageous and try new things will go in place.</p>
                     <div class="others text-center p-3">
                         <div>
-                            <img src="images/painting.jpg" alt="painting">
+                            <img src="painting.jpg" alt="painting">
                             <figcaption>Painting</figcaption>
                         </div>
                         <div>
