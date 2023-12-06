@@ -61,13 +61,29 @@ require "config.php";
             background-color: beige;
             color: black;
         }
-         /*  small devices */
+        /*small devices*/
         @media only screen and (max-width: 800px){
-            
+           .container{
+            text-align: center;
+            width: auto;
+            margin: 10px;
+            padding: 10px;
+            padding-top: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px black;
+            } 
         }
         /*  medium devices */
         @media only screen and (min-width: 801px) and (max-width: 1089px){
-            
+            .container{
+            text-align: center;
+            width: auto;
+            margin: 70px;
+            padding: 40px;
+            padding-top: 80px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px black;
+            }
         }
     </style>
 </head>
