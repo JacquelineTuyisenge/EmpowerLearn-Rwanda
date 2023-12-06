@@ -61,6 +61,10 @@ require "config.php";
             background-color: beige;
             color: black;
         }
+         /*  small devices */
+        @media only screen and (max-width: 800px){
+            
+        }
     </style>
 </head>
 <body>
