@@ -65,6 +65,10 @@ require "config.php";
         @media only screen and (max-width: 800px){
             
         }
+        /*  medium devices */
+        @media only screen and (min-width: 801px) and (max-width: 1089px){
+            
+        }
     </style>
 </head>
 <body>
